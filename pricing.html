@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Webder Website Services</title>
+    <meta name="description" content="Transparent pricing starting at $149.99. Choose from our Basic, Pro, or Enterprise website packages.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/animations.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="stylesheet" href="/styles/pricing.css">
+</head>
+<body>
+    <!-- Header (Consistent with other pages) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="/" class="logo">
+                    <img src="/assets/logo.webp" alt="Webder Logo" width="50" height="50" loading="lazy">
+                    <span class="logo-text">WEBDER</span>
+                </a>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/pricing.html" class="active">Pricing</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="tel:442-359-7554" class="phone-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(442) 359-7554</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Hero -->
+    <section class="pricing-hero">
+        <div class="container">
+            <div class="pricing-hero-content">
+                <h1>Simple, Transparent <span class="highlight">Pricing</span></h1>
+                <p>Choose the perfect website package for your business needs</p>
+                
+                <div class="pricing-toggle">
+                    <span>Pay Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="annual-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Pay Annually <span class="discount-badge">Save 15%</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="section pricing-plans">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card basic-plan">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <p class="pricing-description">Perfect for startups and small businesses</p>
+                        
+                        <div class="price monthly-price">
+                            <span class="currency">$</span>
+                            <span class="amount">149</span>
+                            <span class="decimal">.99</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <div class="price annual-price hidden">
+                            <span class="currency">$</span>
+                            <span class="amount">127</span>
+                            <span class="decimal">.49</span>
+                            <span class="period">/mo</span>
+                            <span class="billed-annual">billed annually</span>
+                        </div>
+                        
+                        <a href="/contact.html?plan=basic" class="btn btn-outline">Get Started</a>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <strong>5-7</strong> Custom Designed Pages</li>
+                            <li><i class="fas fa-check"></i> Mobile Responsive Design</li>
+                            <li><i class="fas fa-check"></i> Basic SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Contact Form Integration</li>
+                            <li><i class="fas fa-check"></i> Social Media Integration</li>
+                            <li><i class="fas fa-check"></i> <strong>1</strong> Round of Revisions</li>
+                            <li><i class="fas fa-check"></i> <strong>14-Day</strong> Delivery</li>
+                            <li><i class="fas fa-check"></i> Basic Training Session</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-footer">
+                        <a href="/contact.html?plan=basic" class="btn btn-primary">Choose Basic</a>
+                    </div>
+                </div>
+                
+                <!-- Pro Plan (Featured) -->
+                <div class="pricing-card pro-plan featured">
+                    <div class="popular-badge">Most Popular</div>
+                    
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <p class="pricing-description">Ideal for growing businesses</p>
+                        
+                        <div class="price monthly-price">
+                            <span class="currency">$</span>
+                            <span class="amount">499</span>
+                            <span class="decimal">.99</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <div class="price annual-price hidden">
+                            <span class="currency">$</span>
+                            <span class="amount">424</span>
+                            <span class="decimal">.99</span>
+                            <span class="period">/mo</span>
+                            <span class="billed-annual">billed annually</span>
+                        </div>
+                        
+                        <a href="/contact.html?plan=pro" class="btn btn-outline">Get Started</a>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <strong>10-15</strong> Custom Designed Pages</li>
+                            <li><i class="fas fa-check"></i> Advanced Mobile Optimization</li>
+                            <li><i class="fas fa-check"></i> Premium SEO Setup</li>
+                            <li><i class="fas fa-check"></i> Newsletter Integration</li>
+                            <li><i class="fas fa-check"></i> Content Management System</li>
+                            <li><i class="fas fa-check"></i> <strong>3</strong> Rounds of Revisions</li>
+                            <li><i class="fas fa-check"></i> <strong>21-Day</strong> Delivery</li>
+                            <li><i class="fas fa-check"></i> Analytics Dashboard</li>
+                            <li><i class="fas fa-check"></i> <strong>2</strong> Training Sessions</li>
+                            <li><i class="fas fa-check"></i> <strong>3 Months</strong> Support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-footer">
+                        <a href="/contact.html?plan=pro" class="btn btn-primary">Choose Pro</a>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card enterprise-plan">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="pricing-description">Custom solutions for large businesses</p>
+                        
+                        <div class="price">
+                            <span class="custom-text">Custom Pricing</span>
+                        </div>
+                        
+                        <a href="/contact.html?plan=enterprise" class="btn btn-outline">Get a Quote</a>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <strong>Unlimited</strong> Custom Pages</li>
+                            <li><i class="fas fa-check"></i> Premium Design & Development</li>
+                            <li><i class="fas fa-check"></i> Advanced SEO Strategy</li>
+                            <li><i class="fas fa-check"></i> E-Commerce Integration</li>
+                            <li><i class="fas fa-check"></i> Custom Web Applications</li>
+                            <li><i class="fas fa-check"></i> <strong>Unlimited</strong> Revisions</li>
+                            <li><i class="fas fa-check"></i> Priority Development</li>
+                            <li><i class="fas fa-check"></i> Dedicated Project Manager</li>
+                            <li><i class="fas fa-check"></i> Comprehensive Training</li>
+                            <li><i class="fas fa-check"></i> <strong>12 Months</strong> Support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-footer">
+                        <a href="/contact.html?plan=enterprise" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan Comparison -->
+    <section class="section plan-comparison bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Plan <span class="highlight">Comparison</span></h2>
+                <p class="section-subtitle">See how our packages stack up</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Basic</th>
+                            <th>Pro</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Number of Pages</td>
+                            <td>5-7</td>
+                            <td>10-15</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Design Customization</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Responsive</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>SEO Optimization</td>
+                            <td>Basic</td>
+                            <td>Advanced</td>
+                            <td>Premium</td>
+                        </tr>
+                        <tr>
+                            <td>Content Management</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>E-Commerce</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>Optional (+$200)</td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Revisions</td>
+                            <td>1 Round</td>
+                            <td>3 Rounds</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Time</td>
+                            <td>14 Days</td>
+                            <td>21 Days</td>
+                            <td>Custom</td>
+                        </tr>
+                        <tr>
+                            <td>Support</td>
+                            <td>1 Month</td>
+                            <td>3 Months</td>
+                            <td>12 Months</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Calculator -->
+    <section class="section pricing-calculator">
+        <div class="container">
+            <div class="calculator-container">
+                <div class="calculator-header">
+                    <h2>Custom <span class="highlight">Project</span> Calculator</h2>
+                    <p>Get an instant estimate for your specific needs</p>
+                </div>
+                
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="website-type">Website Type</label>
+                        <select id="website-type" class="form-control">
+                            <option value="basic">Business Website</option>
+                            <option value="ecommerce">E-Commerce Store</option>
+                            <option value="portfolio">Portfolio/Blog</option>
+                            <option value="webapp">Web Application</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="page-count">Number of Pages</label>
+                        <input type="range" id="page-count" min="1" max="50" value="5" class="form-control">
+                        <div class="range-value"><span id="page-count-value">5</span> pages</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="design-level">Design Complexity</label>
+                        <select id="design-level" class="form-control">
+                            <option value="simple">Simple</option>
+                            <option value="standard" selected>Standard</option>
+                            <option value="premium">Premium</option>
+                            <option value="custom">Fully Custom</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Additional Features</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-container">E-Commerce
+                                <input type="checkbox" id="ecommerce">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">Blog System
+                                <input type="checkbox" id="blog">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">Membership Area
+                                <input type="checkbox" id="membership">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">Multilingual
+                                <input type="checkbox" id="multilingual">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-result">
+                        <div class="estimated-cost">
+                            <span class="label">Estimated Cost:</span>
+                            <span class="amount">$<span id="calculated-price">1,249</span></span>
+                        </div>
+                        <p class="disclaimer">This is an estimate. Final pricing will be confirmed after consultation.</p>
+                        <a href="/contact.html" class="btn btn-primary">Get Exact Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-Ons -->
+    <section class="section addons-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium <span class="highlight">Add-Ons</span></h2>
+                <p class="section-subtitle">Enhance your website with these powerful features</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="addons-grid">
+                <div class="addon-card">
+                    <div class="addon-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>SEO Package</h3>
+                    <p class="addon-price">From $199</p>
+                    <p class="addon-description">Comprehensive on-page SEO optimization to help you rank higher in search results.</p>
+                    <a href="#" class="btn btn-sm btn-outline">Learn More</a>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Professional Photography</h3>
+                    <p class="addon-price">From $299</p>
+                    <p class="addon-description">High-quality custom photos of your business, products, and team.</p>
+                    <a href="#" class="btn btn-sm btn-outline">Learn More</a>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3>Content Creation</h3>
+                    <p class="addon-price">From $149</p>
+                    <p class="addon-description">Professional copywriting for your website pages and blog posts.</p>
+                    <a href="#" class="btn btn-sm btn-outline">Learn More</a>
+                </div>
+                
+                <div class="addon-card">
+                    <div class="addon-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Package</h3>
+                    <p class="addon-price">From $99/year</p>
+                    <p class="addon-description">Enhanced security measures including SSL, malware protection, and backups.</p>
+                    <a href="#" class="btn btn-sm btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+                <p class="section-subtitle">Everything you need to know about our pricing</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's included in the base price?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our base prices include custom design, development, hosting setup, basic SEO, and training. You'll receive a fully functional website ready for launch. Additional services like content creation, advanced SEO, or custom features are available as add-ons.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer payment plans?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We require 50% upfront to begin work, with the remaining 50% due upon completion. For larger projects, we can arrange milestone-based payments. Annual plans offer 15% savings compared to monthly payments.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does it take to build a website?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Basic websites typically take 2-3 weeks, Pro sites 3-4 weeks, and Enterprise projects vary based on complexity. These timelines begin after we receive all required content and materials from you.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I upgrade my plan later?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Many clients start with a Basic or Pro plan and upgrade as their business grows. We'll apply any payments you've already made toward the new plan.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What if I need changes after launch?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All plans include a support period (1-12 months depending on plan). After that, we offer retainer agreements or hourly support. Minor changes are often quick and affordable.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Have more questions? Our team is happy to help!</p>
+                <a href="tel:442-359-7554" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i>
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section bg-accent">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-subtitle">Take the first step toward your perfect website today</p>
+                
+                <div class="cta-buttons">
+                    <a href="/contact.html" class="btn btn-light btn-lg">
+                        Get Your Free Quote
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:442-359-7554" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone-alt"></i>
+                        Speak With Our Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Consistent with other pages) -->
+    <footer class="main-footer">
+        <!-- Footer content from index.html -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/pricing-calculator.js"></script>
+</body>
+</html>
