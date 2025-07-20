@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Webder | Website Design & Development</title>
+    <meta name="description" content="Get in touch with our team - Dylan Carlin, Maximus Mattingley, and Colton Mattingley. Call (442) 359-7554 or email webderservices@gmail.com">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/animations.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    
+    <!-- Mapbox GL CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (Consistent with other pages) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="/" class="logo">
+                    <img src="/assets/logo.webp" alt="Webder Logo" width="50" height="50" loading="lazy">
+                    <span class="logo-text">WEBDER</span>
+                </a>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/pricing.html">Pricing</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="tel:442-359-7554" class="phone-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(442) 359-7554</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>Let's <span class="highlight">Connect</span></h1>
+                <p>Get in touch with our team to discuss your project</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="section contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form Column -->
+                <div class="contact-form-col">
+                    <div class="contact-form-header">
+                        <h2>Send Us a <span class="highlight">Message</span></h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <form id="contact-form" action="https://formspree.io/f/xdkdkryv" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from Webder">
+                        <input type="hidden" name="_replyto" value="webderservices@gmail.com">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="New Project">New Project Inquiry</option>
+                                    <option value="Existing Project">Existing Project</option>
+                                    <option value="Support">Support Question</option>
+                                    <option value="Partnership">Partnership Opportunity</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="file-upload">
+                                <label for="attachment">Attach Files (Optional)</label>
+                                <input type="file" id="attachment" name="attachment" multiple>
+                                <div class="file-upload-preview"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <span class="submit-text">Send Message</span>
+                                <span class="loading-spinner hidden">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </span>
+                            </button>
+                            <p class="form-disclaimer">We'll never share your information with third parties.</p>
+                        </div>
+                    </form>
+                    
+                    <div id="form-success" class="form-message success hidden">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Thank You!</h3>
+                        <p>Your message has been sent successfully. We'll get back to you soon.</p>
+                    </div>
+                    
+                    <div id="form-error" class="form-message error hidden">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>Error Sending Message</h3>
+                        <p>There was a problem submitting your form. Please try again or contact us directly at <a href="mailto:webderservices@gmail.com">webderservices@gmail.com</a>.</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info Column -->
+                <div class="contact-info-col">
+                    <div class="contact-info-card">
+                        <h3>Contact <span class="highlight">Information</span></h3>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email Us</h4>
+                                <a href="mailto:webderservices@gmail.com">webderservices@gmail.com</a>
+                                <p>Typically responds within 4 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Call Us</h4>
+                                <a href="tel:442-359-7554">(442) 359-7554</a>
+                                <p>Monday-Friday, 9am-5pm PST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Visit Us</h4>
+                                <address>
+                                    123 Business Avenue<br>
+                                    Suite 400<br>
+                                    San Francisco, CA 94107
+                                </address>
+                                <p>By appointment only</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <h4>Connect With Us</h4>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Contact -->
+    <section class="section team-contact bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Our <span class="highlight">Team</span> Directly</h2>
+                <p class="section-subtitle">Reach out to our team members for specific inquiries</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="team-contact-grid">
+                <!-- Dylan Carlin -->
+                <div class="team-contact-card">
+                    <div class="team-member-image">
+                        <img src="/assets/team/dylan-carlin.webp" alt="Dylan Carlin" loading="lazy">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Dylan Carlin</h3>
+                        <p class="member-position">Lead Developer</p>
+                        <p class="member-bio">For technical questions, project architecture, and development inquiries.</p>
+                        
+                        <div class="member-contact-methods">
+                            <a href="mailto:dylan@webder.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                dylan@webder.com
+                            </a>
+                            <a href="tel:442-359-7554" class="contact-link">
+                                <i class="fas fa-phone-alt"></i>
+                                Ext. 101
+                            </a>
+                        </div>
+                        
+                        <div class="member-social">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Maximus Mattingley -->
+                <div class="team-contact-card">
+                    <div class="team-member-image">
+                        <img src="/assets/team/maximus-mattingley.webp" alt="Maximus Mattingley" loading="lazy">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Maximus Mattingley</h3>
+                        <p class="member-position">Creative Director</p>
+                        <p class="member-bio">For design, branding, and user experience questions.</p>
+                        
+                        <div class="member-contact-methods">
+                            <a href="mailto:maximus@webder.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                maximus@webder.com
+                            </a>
+                            <a href="tel:442-359-7554" class="contact-link">
+                                <i class="fas fa-phone-alt"></i>
+                                Ext. 102
+                            </a>
+                        </div>
+                        
+                        <div class="member-social">
+                            <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Colton Mattingley -->
+                <div class="team-contact-card">
+                    <div class="team-member-image">
+                        <img src="/assets/team/colton-mattingley.webp" alt="Colton Mattingley" loading="lazy">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Colton Mattingley</h3>
+                        <p class="member-position">Project Manager</p>
+                        <p class="member-bio">For project timelines, proposals, and general inquiries.</p>
+                        
+                        <div class="member-contact-methods">
+                            <a href="mailto:colton@webder.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                colton@webder.com
+                            </a>
+                            <a href="tel:442-359-7554" class="contact-link">
+                                <i class="fas fa-phone-alt"></i>
+                                Ext. 103
+                            </a>
+                        </div>
+                        
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map -->
+    <section class="section map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight">Location</span></h2>
+                <p class="section-subtitle">Visit our office in San Francisco</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="map-overlay">
+                    <div class="overlay-content">
+                        <h3>Webder Headquarters</h3>
+                        <address>
+                            <i class="fas fa-map-marker-alt"></i>
+                            123 Business Avenue<br>
+                            Suite 400<br>
+                            San Francisco, CA 94107
+                        </address>
+                        
+                        <div class="overlay-contact">
+                            <a href="tel:442-359-7554" class="contact-link">
+                                <i class="fas fa-phone-alt"></i>
+                                (442) 359-7554
+                            </a>
+                            <a href="mailto:webderservices@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                webderservices@gmail.com
+                            </a>
+                        </div>
+                        
+                        <div class="overlay-hours">
+                            <h4>Office Hours</h4>
+                            <p>Monday-Friday: 9am-5pm PST</p>
+                            <p>Saturday-Sunday: Closed</p>
+                            <p class="note">* By appointment only</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+                <p class="section-subtitle">Quick answers to common inquiries</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How quickly can you start on my project?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our current lead time for new projects is typically 1-2 weeks. However, we can often accommodate rush projects for an additional fee. Contact us with your timeline and we'll do our best to meet your needs.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What information should I provide when contacting you?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For the most accurate quote, please include:</p>
+                        <ul>
+                            <li>Your business name and industry</li>
+                            <li>Type of website needed (e.g., business, e-commerce, portfolio)</li>
+                            <li>Desired features and functionality</li>
+                            <li>Any specific design preferences</li>
+                            <li>Your timeline and budget</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer ongoing website maintenance?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer several maintenance plans to keep your website secure, updated, and performing optimally. Our plans include regular updates, backups, security monitoring, and content updates. <a href="/pricing.html">View our pricing page</a> for details.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you redesign my existing website?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We specialize in website redesigns that modernize your look while improving functionality and performance. We'll analyze your current site, identify areas for improvement, and create a strategy to enhance your online presence.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's your typical response time for support requests?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our standard response time is within 24 hours for support requests, often much faster. For critical issues affecting your site's functionality, we provide emergency support with a 4-hour response guarantee for clients on our premium maintenance plans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section bg-accent">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-subtitle">Contact us today for a free consultation</p>
+                
+                <div class="cta-buttons">
+                    <a href="/contact.html" class="btn btn-light btn-lg">
+                        Send Us a Message
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:442-359-7554" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone-alt"></i>
+                        Call Now: (442) 359-7554
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Consistent with other pages) -->
+    <footer class="main-footer">
+        <!-- Footer content from index.html -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/contact-form.js"></script>
+    <!-- Mapbox GL JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <script>
+        // Initialize map
+        mapboxgl.accessToken = 'pk.eyJ1Ijoid2ViZGVyIiwiYSI6ImNsZzBkMWN1bTAwY3kzZG1wOHRjZ2R6ZzQifQ.abcdefghijklmnopqrstuvwxyz';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-122.4194, 37.7749], // SF coordinates
+            zoom: 14
+        });
+        
+        // Add marker
+        new mapboxgl.Marker()
+            .setLngLat([-122.4194, 37.7749])
+            .addTo(map);
+    </script>
+</body>
+</html>
