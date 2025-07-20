@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webder | Premium Business Websites</title>
+    <meta name="description" content="Custom websites starting at $149.99. Handcrafted by our team of experts including Dylan Carlin, Maximus Mattingley, and Colton Mattingley.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/animations.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/assets/hero-bg.webp" as="image">
+    <link rel="preload" href="/assets/logo.webp" as="image">
+</head>
+<body class="preload">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-spinner">
+            <img src="/assets/logo.webp" alt="Webder Logo" width="120" height="120">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button class="btn btn-sm" id="accept-cookies">Accept</button>
+                <button class="btn btn-sm btn-outline" id="decline-cookies">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="/" class="logo">
+                    <img src="/assets/logo.webp" alt="Webder Logo" width="50" height="50" loading="lazy">
+                    <span class="logo-text">WEBDER</span>
+                </a>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/" class="active">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/pricing.html">Pricing</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="tel:442-359-7554" class="phone-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(442) 359-7554</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <img src="/assets/hero-bg.webp" alt="Modern office workspace" loading="lazy">
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Premium Websites</span>
+                    <span class="title-line">Starting at <span class="highlight">$149.99</span></span>
+                </h1>
+                
+                <p class="hero-subtitle">Handcrafted by our team of experts to drive your business forward</p>
+                
+                <div class="hero-buttons">
+                    <a href="/pricing.html" class="btn btn-primary btn-lg">
+                        View Pricing
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="/contact.html" class="btn btn-outline btn-lg">
+                        Get a Quote
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">Clients Served</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">Hour Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#services" class="hero-scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+                <p class="section-subtitle">We deliver comprehensive web solutions tailored to your business needs</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Business Websites</h3>
+                    <p class="service-description">Professional websites designed to showcase your brand and convert visitors into customers.</p>
+                    <ul class="service-features">
+                        <li>Fully responsive design</li>
+                        <li>SEO optimized</li>
+                        <li>Content management</li>
+                        <li>Contact forms</li>
+                    </ul>
+                    <a href="/pricing.html#business" class="btn btn-sm btn-outline">From $149.99</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title">E-Commerce Stores</h3>
+                    <p class="service-description">Powerful online stores that make selling your products simple and secure.</p>
+                    <ul class="service-features">
+                        <li>Product management</li>
+                        <li>Secure checkout</li>
+                        <li>Payment gateways</li>
+                        <li>Inventory tracking</li>
+                    </ul>
+                    <a href="/pricing.html#ecommerce" class="btn btn-sm btn-outline">From $499.99</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="service-title">Website Redesign</h3>
+                    <p class="service-description">Modernize your outdated website with fresh design and improved functionality.</p>
+                    <ul class="service-features">
+                        <li>UX/UI improvements</li>
+                        <li>Performance boost</li>
+                        <li>Content migration</li>
+                        <li>SEO refresh</li>
+                    </ul>
+                    <a href="/pricing.html#redesign" class="btn btn-sm btn-outline">From $299.99</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight">Process</span></h2>
+                <p class="section-subtitle">A streamlined approach to delivering exceptional results</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Discovery</h3>
+                    <p class="step-description">We learn about your business, goals, and target audience through detailed consultations.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Design</h3>
+                    <p class="step-description">Our team creates custom mockups that align with your brand and business objectives.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Development</h3>
+                    <p class="step-description">We build your website using clean, efficient code with all the features you need.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Delivery</h3>
+                    <p class="step-description">After thorough testing, we launch your site and provide training for ongoing management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client <span class="highlight">Testimonials</span></h2>
+                <p class="section-subtitle">Don't just take our word for it</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="testimonials-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"Webder transformed our online presence completely. Our new website has increased leads by 140% in just three months. Dylan and his team were professional, creative, and delivered ahead of schedule."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="/assets/testimonials/john-doe.webp" alt="John Doe" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>John Doe</h4>
+                                <p>CEO, Bright Solutions</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"Maximus understood our vision perfectly and executed it beyond our expectations. The e-commerce site they built has doubled our online sales. Their ongoing support is exceptional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="/assets/testimonials/jane-smith.webp" alt="Jane Smith" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Jane Smith</h4>
+                                <p>Founder, Urban Naturals</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"Colton managed our project flawlessly. The redesign has modernized our brand and improved user engagement metrics across the board. Highly recommend Webder for any business website needs."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="/assets/testimonials/mike-johnson.webp" alt="Mike Johnson" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Mike Johnson</h4>
+                                <p>Marketing Director, TechForward</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section bg-accent">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Elevate Your Online Presence?</h2>
+                <p class="cta-subtitle">Get started with a custom website from just $149.99</p>
+                
+                <div class="cta-buttons">
+                    <a href="/contact.html" class="btn btn-light btn-lg">
+                        Get Your Free Quote
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:442-359-7554" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone-alt"></i>
+                        Call Us Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="/assets/logo-white.webp" alt="Webder Logo" width="120" loading="lazy">
+                    </div>
+                    <p class="footer-about">Webder specializes in handcrafted websites that combine beautiful design with powerful functionality to help businesses thrive online.</p>
+                    
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/pricing.html">Pricing</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="/pricing.html#business">Business Websites</a></li>
+                        <li><a href="/pricing.html#ecommerce">E-Commerce Stores</a></li>
+                        <li><a href="/pricing.html#redesign">Website Redesign</a></li>
+                        <li><a href="/pricing.html#seo">SEO Services</a></li>
+                        <li><a href="/pricing.html#hosting">Web Hosting</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:webderservices@gmail.com">webderservices@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:442-359-7554">(442) 359-7554</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business Ave, Suite 400<br>San Francisco, CA 94107</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2023 Webder. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <a href="/terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/animations.js"></script>
+    <script src="/js/form-handler.js"></script>
+</body>
+</html>
