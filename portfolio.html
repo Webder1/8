@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio | Webder Website Design Examples</title>
+    <meta name="description" content="View our portfolio of handcrafted websites for businesses across various industries. See how we can transform your online presence.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/animations.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="stylesheet" href="/styles/portfolio.css">
+    
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <!-- Header (Consistent with other pages) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="/" class="logo">
+                    <img src="/assets/logo.webp" alt="Webder Logo" width="50" height="50" loading="lazy">
+                    <span class="logo-text">WEBDER</span>
+                </a>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/pricing.html">Pricing</a></li>
+                        <li><a href="/portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="tel:442-359-7554" class="phone-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(442) 359-7554</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-hero-content">
+                <h1>Our <span class="highlight">Portfolio</span></h1>
+                <p>Explore our collection of handcrafted websites that deliver results</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+                <button class="filter-btn" data-filter="nonprofit">Non-Profit</button>
+                <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+            </div>
+            
+            <div class="filter-search">
+                <input type="text" id="portfolio-search" placeholder="Search projects...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="section portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="ecommerce" data-tags="fashion,shopify,responsive">
+                    <div class="portfolio-image">
+                        <img src="/assets/portfolio/ecommerce-fashion.webp" alt="Fashion E-Commerce Site" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Urban Threads</h3>
+                                <p>Fashion E-Commerce</p>
+                                <a href="/assets/portfolio/ecommerce-fashion.webp" data-lightbox="urban-threads" data-title="Urban Threads - Fashion E-Commerce" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Urban Threads</h3>
+                        <div class="portfolio-tags">
+                            <span>E-Commerce</span>
+                            <span>Fashion</span>
+                            <span>Shopify</span>
+                        </div>
+                        <a href="/portfolio/urban-threads.html" class="btn btn-sm btn-outline">View Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="business" data-tags="corporate,saas,webapp">
+                    <div class="portfolio-image">
+                        <img src="/assets/portfolio/business-saas.webp" alt="SaaS Business Dashboard" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>DataMetrics Pro</h3>
+                                <p>SaaS Dashboard</p>
+                                <a href="/assets/portfolio/business-saas.webp" data-lightbox="datametrics" data-title="DataMetrics Pro - SaaS Dashboard" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>DataMetrics Pro</h3>
+                        <div class="portfolio-tags">
+                            <span>SaaS</span>
+                            <span>Dashboard</span>
+                            <span>Web App</span>
+                        </div>
+                        <a href="/portfolio/datametrics.html" class="btn btn-sm btn-outline">View Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="restaurant" data-tags="food,menu,reservations">
+                    <div class="portfolio-image">
+                        <img src="/assets/portfolio/restaurant-site.webp" alt="Restaurant Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Bella Cucina</h3>
+                                <p>Italian Restaurant</p>
+                                <a href="/assets/portfolio/restaurant-site.webp" data-lightbox="bella-cucina" data-title="Bella Cucina - Restaurant Website" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Bella Cucina</h3>
+                        <div class="portfolio-tags">
+                            <span>Restaurant</span>
+                            <span>Online Menu</span>
+                            <span>Reservations</span>
+                        </div>
+                        <a href="/portfolio/bella-cucina.html" class="btn btn-sm btn-outline">View Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="portfolio" data-tags="creative,photography,minimal">
+                    <div class="portfolio-image">
+                        <img src="/assets/portfolio/portfolio-creative.webp" alt="Creative Portfolio" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Alex Morgan Studios</h3>
+                                <p>Photography Portfolio</p>
+                                <a href="/assets/portfolio/portfolio-creative.webp" data-lightbox="alex-morgan" data-title="Alex Morgan Studios - Photography Portfolio" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Alex Morgan Studios</h3>
+                        <div class="portfolio-tags">
+                            <span>Portfolio</span>
+                            <span>Photography</span>
+                            <span>Minimal</span>
+                        </div>
+                        <a href="/portfolio/alex-morgan.html" class="btn btn-sm btn-outline">View Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="nonprofit" data-tags="charity,donations,events">
+                    <div class="portfolio-image">
+                        <img src="/assets/portfolio/nonprofit-charity.webp" alt="Nonprofit Organization" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Hope Foundation</h3>
+                                <p>Nonprofit Organization</p>
+                                <a href="/assets/portfolio/nonprofit-charity.webp" data-lightbox="hope-foundation" data-title="Hope Foundation - Nonprofit Website" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Hope Foundation</h3>
+                        <div class="portfolio-tags">
+                            <span>Nonprofit</span>
+                            <span>Donations</span>
+                            <span>Events</span>
+                        </div>
+                        <a href="/portfolio/hope-foundation.html" class="btn btn-sm btn-outline">View Case Study</a>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="ecommerce" data-tags="jewelry,woocommerce,premium">
+                    <div class="portfolio-image">
+                        <img src="/assets/portfolio/ecommerce-jewelry.webp" alt="Jewelry E-Commerce" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Golden Thread Jewelry</h3>
+                                <p>Luxury Jewelry Store</p>
+                                <a href="/assets/portfolio/ecommerce-jewelry.webp" data-lightbox="golden-thread" data-title="Golden Thread Jewelry - E-Commerce" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Golden Thread Jewelry</h3>
+                        <div class="portfolio-tags">
+                            <span>E-Commerce</span>
+                            <span>Jewelry</span>
+                            <span>WooCommerce</span>
+                        </div>
+                        <a href="/portfolio/golden-thread.html" class="btn btn-sm btn-outline">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-load-more">
+                <button class="btn btn-outline" id="load-more">Load More Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Preview -->
+    <section class="section case-study-preview bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight">Case Study</span></h2>
+                <p class="section-subtitle">Deep dive into one of our successful projects</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="case-study">
+                <div class="case-study-image">
+                    <img src="/assets/portfolio/case-study-featured.webp" alt="Case Study Featured Image" loading="lazy">
+                </div>
+                <div class="case-study-content">
+                    <div class="case-study-header">
+                        <h3>Urban Threads</h3>
+                        <div class="case-study-meta">
+                            <span><i class="fas fa-tag"></i> E-Commerce</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2023</span>
+                            <span><i class="fas fa-chart-line"></i> +220% Revenue</span>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-body">
+                        <h4>The Challenge</h4>
+                        <p>Urban Threads, an emerging fashion brand, needed an e-commerce platform that could showcase their unique designs while providing a seamless shopping experience. Their existing website had high bounce rates and low conversion.</p>
+                        
+                        <h4>Our Solution</h4>
+                        <ul>
+                            <li>Custom Shopify theme tailored to their brand aesthetic</li>
+                            <li>Advanced product filtering and search functionality</li>
+                            <li>Mobile-first design with 98+ Google Mobile Score</li>
+                            <li>Integrated size guide and virtual try-on features</li>
+                            <li>Streamlined checkout process reducing abandonment</li>
+                        </ul>
+                        
+                        <h4>The Results</h4>
+                        <div class="case-study-results">
+                            <div class="result-item">
+                                <div class="result-number">220%</div>
+                                <div class="result-label">Increase in Revenue</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-number">45%</div>
+                                <div class="result-label">Lower Bounce Rate</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-number">3.2x</div>
+                                <div class="result-label">More Mobile Sales</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-footer">
+                        <a href="/portfolio/urban-threads.html" class="btn btn-primary">Read Full Case Study</a>
+                        <a href="/contact.html?ref=urban-threads" class="btn btn-outline">Get a Similar Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="section portfolio-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client <span class="highlight">Success Stories</span></h2>
+                <p class="section-subtitle">What our clients say about working with us</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="testimonials-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"Webder completely transformed our online store. The new design not only looks incredible but has directly contributed to a 220% increase in our revenue. The team's attention to detail and understanding of our brand was exceptional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="/assets/testimonials/sarah-johnson.webp" alt="Sarah Johnson" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, Urban Threads</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"As a restaurant owner, I needed a website that could handle reservations, showcase our menu beautifully, and work perfectly on mobile. Webder delivered all this and more. Our online reservations have increased by 75% since launch."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="/assets/testimonials/michael-rodriguez.webp" alt="Michael Rodriguez" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Rodriguez</h4>
+                                <p>Owner, Bella Cucina</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"The DataMetrics dashboard Webder created has become the centerpiece of our SaaS offering. Their technical expertise and design sensibility created a product that our customers love using every day."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="/assets/testimonials/emily-chen.webp" alt="Emily Chen" loading="lazy">
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Chen</h4>
+                                <p>Product Manager, DataMetrics</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section tech-stack bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight">Technology</span> Stack</h2>
+                <p class="section-subtitle">We use the best tools to deliver exceptional results</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="/assets/tech/html5.webp" alt="HTML5" loading="lazy">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="/assets/tech/css3.webp" alt="CSS3" loading="lazy">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="/assets/tech/javascript.webp" alt="JavaScript" loading="lazy">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="/assets/tech/react.webp" alt="React" loading="lazy">
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="/assets/tech/nodejs.webp" alt="Node.js" loading="lazy">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="/assets/tech/php.webp" alt="PHP" loading="lazy">
+                            <span>PHP</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="/assets/tech/python.webp" alt="Python" loading="lazy">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>CMS & E-Commerce</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="/assets/tech/wordpress.webp" alt="WordPress" loading="lazy">
+                            <span>WordPress</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="/assets/tech/shopify.webp" alt="Shopify" loading="lazy">
+                            <span>Shopify</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="/assets/tech/woocommerce.webp" alt="WooCommerce" loading="lazy">
+                            <span>WooCommerce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section bg-accent">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Your Project?</h2>
+                <p class="cta-subtitle">Let's create something amazing together</p>
+                
+                <div class="cta-buttons">
+                    <a href="/contact.html" class="btn btn-light btn-lg">
+                        Get Your Free Quote
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:442-359-7554" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone-alt"></i>
+                        Call Us Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Consistent with other pages) -->
+    <footer class="main-footer">
+        <!-- Footer content from index.html -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/portfolio-filter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
