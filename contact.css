@@ -1,0 +1,699 @@
+/* ==========================================================================
+   Webder Contact Page Styles
+   Version: 3.0
+   Author: Webder Team
+   ========================================================================== */
+
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
+/*
+ * 1. Contact Page Layout
+ * 2. Form Styles
+ * 3. Form Validation
+ * 4. Interactive Elements
+ * 5. Map Container
+ * 6. Team Contact Cards
+ * 7. Success/Error States
+ * 8. Responsive Adjustments
+ */
+
+/* ==========================================================================
+   1. Contact Page Layout
+   ========================================================================== */
+
+.contact-hero {
+  position: relative;
+  padding: var(--space-xxl) 0;
+  background: linear-gradient(135deg, rgba(110, 69, 226, 0.9), rgba(136, 211, 206, 0.9)), 
+              url('/assets/contact-bg.webp') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  margin-top: 80px; /* Account for fixed header */
+}
+
+.contact-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: var(--space-sm);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto var(--space-lg);
+  opacity: 0.9;
+}
+
+.contact-main {
+  padding: var(--space-xl) 0;
+  background-color: var(--lighter-gray);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--space-xl);
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   2. Form Styles
+   ========================================================================== */
+
+.contact-form-col {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form-col::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+.contact-form-header {
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.contact-form-header h2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
+.contact-form-header p {
+  color: var(--medium-gray);
+}
+
+#contact-form {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+@media (max-width: 576px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-weight: var(--medium);
+  color: var(--dark-gray);
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-md);
+  font-family: var(--main-font);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(110, 69, 226, 0.1);
+  outline: none;
+}
+
+textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* File Upload Styling */
+.file-upload {
+  position: relative;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-upload-label {
+  display: block;
+  padding: var(--space-sm);
+  border: 2px dashed var(--light-gray);
+  border-radius: var(--radius-md);
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.file-upload-label:hover {
+  border-color: var(--primary-color);
+  background-color: rgba(110, 69, 226, 0.05);
+}
+
+.file-upload-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.file-preview-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--lighter-gray);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+}
+
+.file-preview-item button {
+  margin-left: var(--space-xs);
+  color: var(--medium-gray);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.file-preview-item button:hover {
+  color: var(--accent-color);
+}
+
+/* Checkbox Styling */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-sm);
+  margin-right: var(--space-xs);
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.checkbox-container:hover .checkmark {
+  border-color: var(--primary-color);
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+/* Submit Button */
+.form-submit {
+  margin-top: var(--space-lg);
+  text-align: center;
+}
+
+.form-submit button {
+  min-width: 200px;
+}
+
+.loading-spinner {
+  display: none;
+}
+
+.form-submit.loading .submit-text {
+  display: none;
+}
+
+.form-submit.loading .loading-spinner {
+  display: inline-block;
+}
+
+.form-disclaimer {
+  font-size: 0.875rem;
+  color: var(--medium-gray);
+  margin-top: var(--space-sm);
+}
+
+/* ==========================================================================
+   3. Form Validation
+   ========================================================================== */
+
+.form-group.error .form-control {
+  border-color: var(--accent-color);
+}
+
+.form-group.success .form-control {
+  border-color: var(--secondary-color);
+}
+
+.form-error-message {
+  display: none;
+  color: var(--accent-color);
+  font-size: 0.875rem;
+  margin-top: var(--space-xs);
+}
+
+.form-group.error .form-error-message {
+  display: block;
+}
+
+/* ==========================================================================
+   4. Interactive Elements
+   ========================================================================== */
+
+.contact-info-col {
+  position: relative;
+}
+
+.contact-info-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-xl);
+  height: 100%;
+  position: sticky;
+  top: var(--space-xl);
+}
+
+.contact-method {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  align-items: flex-start;
+}
+
+.contact-method:last-child {
+  margin-bottom: 0;
+}
+
+.method-icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(110, 69, 226, 0.1);
+  border-radius: var(--radius-rounded);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.method-info h4 {
+  margin-bottom: var(--space-xs);
+  font-size: 1.125rem;
+}
+
+.method-info a {
+  color: var(--dark-color);
+  font-weight: var(--medium);
+  transition: color var(--transition-fast);
+}
+
+.method-info a:hover {
+  color: var(--primary-color);
+}
+
+.method-info p {
+  color: var(--medium-gray);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.contact-social {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--light-gray);
+}
+
+.contact-social h4 {
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-rounded);
+  background-color: var(--lighter-gray);
+  color: var(--dark-gray);
+  transition: all var(--transition-fast);
+}
+
+.social-links a:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   5. Map Container
+   ========================================================================== */
+
+.map-section {
+  padding: var(--space-xl) 0;
+  background-color: var(--white);
+}
+
+.map-container {
+  position: relative;
+  height: 500px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-overlay {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  background-color: var(--white);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  max-width: 300px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .map-overlay {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 100%;
+    margin-bottom: var(--space-md);
+  }
+}
+
+.map-overlay h3 {
+  margin-bottom: var(--space-sm);
+  font-size: 1.25rem;
+}
+
+.map-overlay address {
+  font-style: normal;
+  margin-bottom: var(--space-md);
+}
+
+.map-overlay i {
+  margin-right: var(--space-xs);
+  color: var(--primary-color);
+}
+
+.overlay-contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.contact-link {
+  color: var(--dark-gray);
+  transition: color var(--transition-fast);
+}
+
+.contact-link:hover {
+  color: var(--primary-color);
+}
+
+.contact-link i {
+  margin-right: var(--space-xs);
+}
+
+.overlay-hours h4 {
+  margin-bottom: var(--space-xs);
+  font-size: 1rem;
+}
+
+.overlay-hours p {
+  font-size: 0.875rem;
+  margin-bottom: var(--space-xs);
+}
+
+.overlay-hours .note {
+  font-size: 0.75rem;
+  color: var(--medium-gray);
+}
+
+/* ==========================================================================
+   6. Team Contact Cards
+   ========================================================================== */
+
+.team-contact {
+  padding: var(--space-xl) 0;
+  background-color: var(--lighter-gray);
+}
+
+.team-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.team-contact-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  transition: all var(--transition-normal);
+}
+
+.team-contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-member-image {
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.team-member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-info {
+  padding: var(--space-md);
+  flex-grow: 1;
+}
+
+.team-member-info h3 {
+  margin-bottom: var(--space-xs);
+}
+
+.member-position {
+  color: var(--primary-color);
+  font-weight: var(--medium);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-sm);
+}
+
+.member-bio {
+  color: var(--medium-gray);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-md);
+}
+
+.member-contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.member-social {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.member-social a {
+  color: var(--medium-gray);
+  transition: color var(--transition-fast);
+}
+
+.member-social a:hover {
+  color: var(--primary-color);
+}
+
+/* ==========================================================================
+   7. Success/Error States
+   ========================================================================== */
+
+.form-message {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  text-align: center;
+  display: none;
+}
+
+.form-message i {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.form-message h3 {
+  margin-bottom: var(--space-xs);
+}
+
+.form-message p {
+  margin-bottom: 0;
+}
+
+.form-message.success {
+  background-color: rgba(136, 211, 206, 0.1);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-dark);
+}
+
+.form-message.success i {
+  color: var(--secondary-color);
+}
+
+.form-message.error {
+  background-color: rgba(255, 126, 95, 0.1);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-dark);
+}
+
+.form-message.error i {
+  color: var(--accent-color);
+}
+
+/* ==========================================================================
+   8. Responsive Adjustments
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .contact-hero {
+    padding: var(--space-xl) 0;
+  }
+  
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    margin-top: 70px;
+  }
+  
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-hero p {
+    font-size: 1rem;
+  }
+  
+  .contact-form-col,
+  .contact-info-card {
+    padding: var(--space-lg);
+  }
+  
+  .team-contact-card {
+    flex-direction: column;
+  }
+  
+  .team-member-image {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-hero {
+    padding: var(--space-lg) 0;
+  }
+  
+  .contact-form-col::before {
+    width: 100%;
+    height: 5px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .map-container {
+    height: 400px;
+  }
+}
